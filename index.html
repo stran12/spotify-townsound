@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<style>
+			@import url('sp://import/css/api.css');
+			@import url('sp://import/css/player.css');
+			@import url('sp://import/css/eve.css');
+		</style>
+	<title>My First App</title>
+	<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
+	
+</head>
+<body>
+
+<h1 id="header">Hello, worlddd!</h1>
+
+<div id="player"></div>
+<div id="search"></div>
+
+<script type="text/javascript">
+
+	console.log("being");
+	var sp = getSpotifyApi(1);
+	var models = sp.require('sp://import/scripts/api/models');
+	var views = sp.require('sp://import/scripts/api/views');
+
+	var tempPlaylist = new models.Playlist();
+	var playlist 	 = new views.List(tempPlaylist);
+
+	var track = models.Track.fromURI("spotify:track:3gT6bVIAIwWmZZEHCP58xs");
+	tempPlaylist.add(track); 
+	tempPlaylist.add(models.Track.fromURI("spotify:track:3enFTlwkCRF5HUM8xX6FKB"));
+
+
+
+
+	playerHTML = document.getElementById('player').appendChild(playlist.node);
+
+	var search = new models.Search('genre:"Indie Rock"');
+	search.localResults = models.LOCALSEARCHRESULTS.APPEND;
+	var searchHTML = document.getElementById('search');
+
+                search.observe(models.EVENT.CHANGE, function() {
+                    var results = search.tracks;
+                    for(i=0;i<results.length;i++){
+						tempPlaylist.add(results[i]); 
+					
+					}
+                });
+
+                search.appendNext();
+				
+	playerHTML = document.getElementById('player').appendChild(playlist.node);
+	
+
+	</script>
+
+<h3>what now?</h3>
+
+
+
+</body>
+</html>

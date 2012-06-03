@@ -1,0 +1,20 @@
+{
+	"BundleType": "Application",
+	"AppIcon": {
+		"36x18": "tutorial.png"
+	},
+	"AppName": "My Application",
+	"AppDescription": "Music discovery spotify app that plays music from bands that are coming to your town.",
+	"SupportedLanguages": [
+		"en"
+	],
+	"BundleIdentifier": "townsound",
+	"BundleVersion": "0",
+	"RequiredInterface": 1,
+	"VendorIdentifier": "stephen.v.tran@gmail.com",
+	"RequiredPermissions": [
+		"http://pagead2.googlesyndication.com/pagead/show_ads.js",
+		"http://googleads.g.doubleclick.net/pagead/ads?client=ca-pub-6462898257742902&amp;output=html&amp;h=90&amp;slotname=7420673030&amp;w=728&amp;lmt=1336658118&amp;flash=11.1.102&amp;url=sp%3A%2F%2Ftutorial%2Findex.html&amp;dt=1336632918578&amp;bpp=6&amp;shv=r20120502&amp;jsv=r20110914&amp;correlator=1336632918588&amp;frm=20&amp;adk=388660954&amp;ga_vid=378622689.1336632919&amp;ga_sid=1336632919&amp;ga_hid=484053984&amp;ga_fc=0&amp;u_tz=-420&amp;u_his=1&amp;u_java=0&amp;u_h=1080&amp;u_w=1920&amp;u_ah=1040&amp;u_aw=1920&amp;u_cd=32&amp;u_nplug=20&amp;u_nmime=104&amp;dff=times&amp;dfs=16&amp;adx=8&amp;ady=87&amp;biw=1685&amp;bih=912&amp;oid=3&amp;fu=0&amp;ifi=1&amp;dtd=13&amp;xpc=WZVnaFXCEc&amp;p=sp%3A//tutorial",
+		"https://ajax.googleapis.com"
+	]
+}

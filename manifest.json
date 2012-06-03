@@ -1,0 +1,18 @@
+{
+	"BundleType": "Application",
+	"AppIcon": {
+		"36x18": "tutorial.png"
+	},
+	"AppName": "My Application",
+	"AppDescription": "Music discovery spotify app that plays music from bands that are coming to your town.",
+	"SupportedLanguages": [
+		"en"
+	],
+	"BundleIdentifier": "townsound",
+	"BundleVersion": "0",
+	"RequiredInterface": 1,
+	"VendorIdentifier": "stephen.v.tran@gmail.com",
+	"RequiredPermissions": [
+		"https://ajax.googleapis.com"
+	]
+}
