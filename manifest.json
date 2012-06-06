@@ -13,6 +13,8 @@
 	"RequiredInterface": 1,
 	"VendorIdentifier": "stephen.v.tran@gmail.com",
 	"RequiredPermissions": [
-		"https://ajax.googleapis.com"
+		"https://ajax.googleapis.com",
+		"http://www.google-analytics.com/ga.js",
+		"https://ssl.google-analytics.com/ga.js"
 	]
 }
